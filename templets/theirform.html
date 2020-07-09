@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Theirform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'testw.css' %}">
+    
+    
+</head>
+<body bgcolor=#fff style="padding-top: 10vh;">
+    
+
+    <form id="myForm" action="mainformer" method="post">
+        {%csrf_token%}    
+        <div class="form-container" style="width: 1150px;
+        height: 900px;
+        padding: 60px 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 0 #000;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;">
+        <ul class="list">
+            <h2 style="margin-left:-96px;color:#e92525;font-family: 'Roboto', sans-serif;font-size:28px;font-weight:700;">Details of {{forms.ingamename}} :</h2>
+            <div>
+            <h6 style="margin-left:360px;right:20px;position:relative;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:100px;">Fullname: {{forms.fullname}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:50px;">Ingamename:    {{forms.ingamename}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:127px;">Region:        {{forms.region}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:32px;">PhoneNumber:   {{forms.phone}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:62px;">CharacterID:   {{forms.characterid}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:160px;">K/D:           {{forms.kperd}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:160px;">Tier:          {{forms.yourtier}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:130px;">Server:          {{forms.gameserver}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:145px;">W/M:          {{forms.winpermatches}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:82px;">TPPorFPP:          {{forms.tpporfpp}}</h6>
+            <h6 style="margin-left:360px;right:20px;position:relative;margin-top:-30px;font-size:28px;text-align:left;color:#42455a;font-family: 'Roboto', sans-serif;word-spacing:140px;">S/D/S:          {{forms.insquad}}</h6>
+
+        </div>
+            <br>
+        </ul>
+    </div>
+</form>
+    <h2 class="show" style="margin-right:67px;top:1040px;position:absolute;"><span>Made by A.V.N.M.HemaTeja</span></h2>
+    
+</body>
+</html>

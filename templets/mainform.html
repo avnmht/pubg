@@ -1,0 +1,68 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mainform</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'testw.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body bgcolor=#fff style="padding-top: 10vh;">
+    
+
+    <form id="myForm" action="mainformer" method="post">
+        {%csrf_token%}    
+        <div class="form-container" style="width: 1150px;
+        height: 900px;
+        padding: 60px 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 0 #000;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;">
+        <ul class="list">
+            <div style="left: 550px" class="user-img" ></div>
+            <h2 style="margin-left:-14px;">Enter the Details</h2>
+            
+            <input type="text" name="U" value={{uname}} style="visibility: hidden;position:absolute;top:20px;">
+            <li style="margin-left:110px;margin-top:50px;"><input type="text" name="fullnamer" placeholder="Your Full Name" style="width: 300px;height:30px;" maxlength="12"></li>
+            <h1 style="position:absolute;top:150px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Full Name as your Identity</h1>
+            <li style="margin-left: 110px;margin-top:3px;"><input type="text" name="ingamenamer" placeholder="Enter In-game Name" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:213px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your In-Game Name</h1>
+            <li style="margin-left: 110px;margin-top: 3px;"><input type="text" name="regionr" placeholder="Enter the Region" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:271px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Region</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="phonenumber1r" placeholder="Phonenumber" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:331px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Phonenumber</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="characteridr" placeholder="Character ID" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:394px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Character ID</h1>
+            <li style="margin-left: 110px;margin-top:3px;"><input type="text" name="kperdr" placeholder="K/D" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:455px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your K/D</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="yourtierr" placeholder="Your Tier" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:514px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Highest Tier</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="gameserverr" placeholder="Enter the Server" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:577px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your In-Game server (ASIA/N.A/S.A)</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="winpermatchesr" placeholder="Enter the W/M" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:637px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your Wins/Matches Ratio</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="tpporfpp" placeholder="Tpp or Fpp" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:697px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Enter your stats are TPP or FPP</h1>
+            <li style="margin-left:110px;margin-top:3px;"><input type="text" name="insquadr" placeholder="Solo/Duo/Squad" style="width: 300px;height:30px;"></li>
+            <h1 style="position:absolute;top:760px;left:560px;color:#42455a;font-family: 'Roboto', sans-serif;font-size:23px;">- Your K/D is for Solo/Duo/Squad</h1>
+
+
+            <li onclick="myForm.submit();"style="background-color: #4690fb;width: 300px;height:30px;
+            margin-left:400px;
+            margin-top:50px;
+            text-align: center;
+            padding: 8px 0px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;">submit</li>
+            <br>
+        </ul>
+    </div>
+</form>
+    
+    
+</body>
+</html>

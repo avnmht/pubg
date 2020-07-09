@@ -1,0 +1,186 @@
+/*.container{
+    width: 100%;
+    height: 100%;
+}*/
+.cover{
+    background-image: url('/static/42455a.png');
+
+}
+.register-bg{
+    background-image: url('/static/42455a.png');
+}
+
+.form-container{
+    width: 325px;
+    height: auto;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 #000;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+ul.list{
+    list-style-type: none;
+    text-align: center;
+   
+
+}
+ul.list li{
+    width: 250px;
+    margin-bottom: 15px;
+}
+ul.list h6{
+    margin-left: auto;
+    position: relative;
+    font-size: large;
+}
+ul.list li input{
+    width: 250px;
+    text-align: center;
+    padding: 8px 0px;
+    border: #4690fb;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+}
+ul.list li input[type="button"]{
+    background-color: #4690fb;
+    color: #fff;
+}
+
+.user-img{
+    background: url('pngwavefinal.png') no-repeat;
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    position: absolute;
+    top: -100px;
+    left: 130px;
+
+}
+
+.menu ul{
+    display: inline-flex;
+    margin: 30px;
+
+}
+.tlt{
+    position: absolute;
+    top: 95px ;
+    right: 420px;
+    /*background: -webkit-linear-gradient(#12c2e9,#c471ed,#f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color: #ff8000;
+    font-size: 150px;
+}
+.social img{
+    width: 40px;
+    position: absolute;
+    top: 150px;
+    right: 170px;
+
+}
+.social1 img{
+    width: 40px;
+    position: absolute;
+    top: 450px;
+    right: 170px;
+    
+
+} 
+
+.social2 img{
+
+    width: 40px;
+    position: absolute;
+    top: 300px;
+    right: 170px;
+}
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.signup-btn{
+    top:40px;
+    right:80px;
+    font-size: 18px;
+    position: absolute;
+    text-decoration: none;
+    color: #ff8000;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff,#fff),radial-gradient(circle at top left,#fccfa2,#ff8000,#f7bf8b);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+.signup-btn span{
+    display: block;
+    padding: 4px 12px;
+}
+.login-btn{
+    top:40px;
+    right:200px;
+    font-size: 18px;
+    position: absolute;
+    text-decoration: none;
+    color: #ff8000;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff,#fff),radial-gradient(circle at top left,#fccfa2,#ff8000,#f7bf8b);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+.login-btn span{
+
+    display: block;
+    padding: 4px 13px;
+
+
+
+}
+.show{
+    position: absolute;
+    font-size: 17px;
+    top: 530px;
+    right: 45px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff,#fff),radial-gradient(circle at top left,#fccfa2,#ff8000,#f7bf8b);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+
+    color: #ff8000;
+}
+.show span{
+    
+    display: block;
+    padding: 4px 13px;
+
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+    
+}
+.logook img{
+    width: 80px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 70px;
+
+}
+.logo img{
+    width: 60px;
+    margin-top: -10px;
+    margin-right: 48px;
+    
+    
+}

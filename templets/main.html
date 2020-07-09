@@ -1,0 +1,92 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'testw.css' %}">
+    
+    
+</head>
+<body bgcolor=#fff  style="padding-top: 10vh;">
+    
+<form action="createform" id="My" method="POST" enctype="multipart/form-data">
+    {%csrf_token%}
+    <input type="text" name="Uname" style="visibility: hidden;" value={{user}}>
+    <li style="text-decoration: none;cursor:pointer;margin-left:20px;"><a class="signup-btn" style="text-decoration: none;" onclick="My.submit();"><span>Create Your New Form</span></a></li>
+    
+</form>    
+    <div class="form-container" style="width: 250px;
+        height: 530px;
+        padding: 60px 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0px 10px 0px #ff8000;
+        margin-left: 30px;
+        margin-top: 30px;
+        position: absolute;">
+        <ul class="list">
+
+            <li style="text-decoration: none;cursor:pointer;position:relative;margin-top:516px;margin-left:72px;"><a class="signup-btn" style="text-decoration: none;font-size:20px;width:310px;" href="tester"><span>Sign Out</span></a></li>
+            <form action="regioner" id="myregion" method="POST">
+            {%csrf_token%}
+            <li style="position:absolute;left:26px;top:73px;"><input type="text" name="regionr" placeholder="Press Region" style="width: 150px;height:15px;"></li>
+        </form>
+            <h2 class="show"style="font-size:23px;right:53px;margin-top:-530px;margin-right:-55px;width:310px"><span>Filter By:</span></h2>
+            
+            <h2 class="show"style="font-size:17px;cursor:pointer;right:67px;margin-top:-415px;margin-right:55px;"><a onclick="myregion.submit();"><span>Region</span></a></h2>
+            <form action="kperder" method="POST" id="mykperd">
+                {%csrf_token%}
+            </form>
+            <h2 class="show"style="font-size:17px;cursor:pointer;right:67px;margin-top:3px;margin-right:64px;"><a onclick="mykperd.submit();"><span>K/D</span></a></h2>
+            <form action="characterer" id="mycharacter" method="POST">
+            {%csrf_token%}
+            <li style="position:absolute;left:26px;top:162px;"><input type="text" name="characterr" placeholder="Press Character ID" style="width: 150px;height:15px;" ></li>
+            </form>
+            <h2 class="show"style="font-size:17px;cursor:pointer;right:67px;margin-top:-223px;margin-right:64px;"><a onclick="mytier.submit();"><span>Tier</span></a></h2>
+            <form action="ingamenameer" id="myingame" method="POST">
+                {%csrf_token%}
+            <li style="position:absolute;left:26px;top:357px;"><input type="text" name="ingamer" placeholder="Press Ingame-name" style="width: 150px;height:15px;" ></li>
+            </form>
+            
+            <h2 class="show"style="font-size:17px;cursor:pointer;right:67px;margin-top:-123px;margin-right:28px;"><a onclick="myingame.submit();"><span>Ingame-Name</span></a></h2>
+            <form action="tierer" id="mytier" method="POST">
+            {%csrf_token%}
+            <li style="position:absolute;left:26px;top:260px;"><input type="text" name="tierr" placeholder="Press Tier" style="width: 150px;height:15px;"></li>
+            </form>
+            <h2 class="show"style="font-size:17px;cursor:pointer;right:67px;margin-top:-320px;margin-right:28px;"><a onclick="mycharacter.submit();"><span>Character-ID</span></a></h2>
+            <h2 class="show"style="font-size:23px;right:41px;margin-top:-74px;margin-right:-43px;width:310px;"><span>Sort By:</span></h2>
+
+            <br>
+        </ul>
+    </div>
+    
+    
+    {%for i in P%}
+    <div class="form-container" style="width: 480px;
+    height: 75px;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #ff8000;
+    margin-left: 500px;
+    margin-top: 32px;
+    position:relative;">
+    <form id="Myform" action="theirform" method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+    <ul class="list">
+        <input type="text" name="n" style="visibility: hidden;" value={{i.fullname}}>
+        <li style="width: 30px;"><input type="submit" style="width: auto;height:50px;margin-top:-30px;padding:-60px -20px;cursor:pointer;margin-left:-20px;margin-top:-70px;background-color:#fff;font-family: 'Roboto', sans-serif;font-size:20px;font-weight:700;color:#42455a;" value="{{i.fullname}}"></li>
+        <li style="text-decoration: none;position:relative;margin-left:160px;margin-top:-55px;font-family: 'Roboto', sans-serif;font-size:5px;font-weight:700;word-spacing:30px;color:#42455a;" ><h1>K/D Server W/M S/D/S</h1></li>
+        <li style="text-decoration: none;position:relative;margin-left:158px;margin-top:25px;font-family: 'Roboto', sans-serif;font-size:5px;font-weight:700;word-spacing:34px;text-align:center;color:#42455a;" ><h1>{{i.kperd}} {{i.gameserver}} {{i.winpermatches}} {{i.insquad}}</h1></li>
+        <br>
+    </ul>
+
+</form>
+</div>
+
+{%endfor%}
+
+    <h2 class="show"style="right:67px;"><span>Made by A.V.N.M.HemaTeja</span></h2>
+    
+</body>
+</html>
