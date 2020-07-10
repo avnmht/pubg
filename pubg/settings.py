@@ -76,11 +76,12 @@ WSGI_APPLICATION = 'pubg.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Pubgconnect',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'squader',
         'HOST': 'localhost',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PORT': '2323',
+        'USER': 'root',
+        'PASSWORD': 'root',
     }
 }
 

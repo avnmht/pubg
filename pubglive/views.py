@@ -65,6 +65,7 @@ def mainformer(request):
         v6=request.POST["kperdr"]
         v7=request.POST["yourtierr"]
         v8=request.POST["gameserverr"]
+        v8=v8.upper()
         if v8=="ASIA" or v8=="N.A" or v8=="S.A": 
             v9=request.POST["winpermatchesr"]
             v10=request.POST["tpporfpp"]
@@ -75,7 +76,7 @@ def mainformer(request):
             v5=v5.lower()
             v6=v6.lower()
             v7=v7.lower()
-            v8=v8.lower()
+            v8=v8.upper()
             v9=v9.lower()
             v10=v10.lower()
             v11=v11.lower()
@@ -99,6 +100,7 @@ def mainformer(request):
         v7=request.POST["yourtierr"]
 
         v8=request.POST["gameserverr"]
+        v8=v8.upper()
         if v8=="ASIA" or v8=="N.A" or v8=="S.A": 
             v9=request.POST["winpermatchesr"]
             v10=request.POST["tpporfpp"]
@@ -109,7 +111,7 @@ def mainformer(request):
             v5=v5.lower()
             v6=v6.lower()
             v7=v7.lower()
-            v8=v8.lower()
+            v8=v8.upper()
             v9=v9.lower()
             v10=v10.lower()
             v11=v11.lower()        
